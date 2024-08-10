@@ -54,13 +54,13 @@ button:last-child {
 .image-container {
     display: flex;
     flex-direction: row;
-    max-width: 50%; 
+    max-width: 100%; 
     height: auto;
     margin-top: 2em;
 }
 
 .image-container img {
-    width: 30%; 
+    width: 100%; 
     height: auto;
 }
 
@@ -76,7 +76,7 @@ button:last-child {
     }
 
     .content, .image-container {
-        width: 100%;
+        width: 90%;
         padding-bottom: 4em;
     }
 
