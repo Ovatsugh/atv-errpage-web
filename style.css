@@ -1,0 +1,100 @@
+* {
+    color: #D6D6F2;
+    font-family: "Titillium Web", system-ui;
+    font-style: normal;
+}
+
+body {
+    background-image: url('assets/image.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    max-width: 50%; /* Limita a largura do conteúdo */
+}
+
+.content h1 {
+    font-size: 2.5em; /* Tamanho do título */
+}
+
+.content p {
+    font-size: 1.5em; /* Tamanho do parágrafo */
+    margin-top: 1em;
+}
+
+.button-container {
+    margin-top: 1.5em; /* Espaçamento acima dos botões */
+    display: flex;
+}
+
+button {
+    padding: 1em;
+    font-size: 1.2em; 
+    background-color: #151557;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    margin-right: 1em; /* Espaçamento entre os botões */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove o espaço à direita do último botão */
+}
+
+.image-container {
+    max-width: 40%; /* Ajusta a largura máxima da imagem */
+    height: auto;
+    margin-top: 2em;
+}
+
+.image-container img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .content, .image-container {
+        width: 100%;
+    }
+
+    .image-container {
+        order: -1;
+        margin-top: 1em; /* Diminui o espaço acima da imagem */
+    }
+
+    .content {
+        margin-bottom: 0; /* Remove ou diminui o espaço abaixo do conteúdo */
+    }
+
+    button {
+        font-size: 0.9em; 
+        padding: 0.5em;
+        background-color: #151557;
+        margin-right: 0.5em; /* Espaçamento entre os botões */
+    }
+
+    .content p {
+        font-size: 0.8em; /* Tamanho do parágrafo */
+    }
+
+    .content h1 {
+        font-size: 1.5em; /* Tamanho do título */
+    }
+
+    .image-container {
+        max-width: 100%; /* Ajusta a largura máxima da imagem */
+    }
+}
